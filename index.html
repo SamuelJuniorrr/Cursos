@@ -1,69 +1,56 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Samuel Ferreira | Cursos de Dados</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos Online | Samuel Ferreira</title>
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container nav-container">
-      <div class="logo">Samuel<span> Ferreira</span></div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Início</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="inscricao.html">Inscrição</a></li>
-        </ul>
-      </nav>
+
+<header>
+  <div class="logo">Samuel<span> Ferreira</span></div>
+  <ul class="nav-links">
+    <li><a href="#cursos">Cursos</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="inscricao.html">Inscrição</a></li>
+  </ul>
+</header>
+
+<section class="hero">
+  <h1><span>Transforme seus dados</span> em decisões poderosas</h1>
+  <p>Domine Power BI, Excel, SQL Server e muito mais com quem vive dados no dia a dia.</p>
+  <a href="inscricao.html" class="btn">Quero aprender agora</a>
+</section>
+
+<section class="container">
+  <h2 class="section-title">Nossos Cursos</h2>
+  <p class="section-subtitle">Escolha a habilidade que vai turbinar sua carreira</p>
+
+  <div class="courses">
+    <div class="course-card">
+      <h3>Power BI Completo</h3>
+      <p>Dashboards reais, DAX na prática e visual storytelling profissional.</p>
     </div>
-  </header>
-
-  <section class="hero">
-    <div class="container">
-      <h1>Domine as ferramentas de dados</h1>
-      <p>Aprenda Power BI, Excel, SQL Server, Documentação e transforme sua carreira com conhecimento prático e direto ao ponto.</p>
-      <div class="buttons">
-        <a href="#cursos" class="btn btn-yellow">Ver Cursos</a>
-        <a href="inscricao.html" class="btn btn-outline">Fazer Inscrição</a>
-      </div>
+    <div class="course-card">
+      <h3>Excel Avançado</h3>
+      <p>Fórmulas inteligentes, automação com VBA e dashboards impactantes.</p>
     </div>
-  </section>
-
-  <section class="projects-section" id="cursos">
-    <div class="container">
-      <h2 class="section-title">Cursos Disponíveis</h2>
-      <p class="section-subtitle">Conteúdo prático, direto ao ponto e orientado ao mercado</p>
-
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3 class="project-title" style="color: var(--powerbi);">Power BI Completo</h3>
-          <p class="project-description">Construa dashboards interativos, KPIs e análises visuais com dados reais.</p>
-        </div>
-
-        <div class="project-card">
-          <h3 class="project-title" style="color: var(--excel);">Excel Profissional</h3>
-          <p class="project-description">Do básico ao avançado, automatize planilhas com fórmulas e dashboards.</p>
-        </div>
-
-        <div class="project-card">
-          <h3 class="project-title" style="color: var(--sql);">SQL Server do Zero</h3>
-          <p class="project-description">Domine comandos SQL, consultas otimizadas, views e procedures.</p>
-        </div>
-
-        <div class="project-card">
-          <h3 class="project-title" style="color: var(--doc);">Documentação e Processos</h3>
-          <p class="project-description">Aprenda BPMN, fluxo técnico, modelagem e documentação profissional.</p>
-        </div>
-      </div>
+    <div class="course-card">
+      <h3>SQL Server</h3>
+      <p>Consultas, joins, procedures, views e automação com dados reais.</p>
     </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Samuel Ferreira. Todos os direitos reservados.</p>
+    <div class="course-card">
+      <h3>Documentação e Processos</h3>
+      <p>BPMN, Draw.io, Word técnico e modelagem para empresas reais.</p>
     </div>
-  </footer>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Samuel Ferreira. Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>

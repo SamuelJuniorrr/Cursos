@@ -1,102 +1,69 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cursos Online | Samuel Ferreira</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samuel Ferreira | Cursos de Dados</title>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <header>
     <div class="container nav-container">
       <div class="logo">Samuel<span> Ferreira</span></div>
       <nav>
         <ul class="nav-links">
           <li><a href="index.html" class="active">Início</a></li>
-          <li><a href="#cursos">Cursos</a></li>
-          <li><a href="#instrutor">Sobre</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="inscricao.html">Inscrição</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
   <section class="hero">
-    <div class="container hero-content">
-      <h1><span>Domine ferramentas</span> que o mercado exige</h1>
-      <p>Aprenda Power BI, Excel, SQL Server, Documentação e muito mais com uma abordagem prática e voltada para resultados reais.</p>
+    <div class="container">
+      <h1>Domine as ferramentas de dados</h1>
+      <p>Aprenda Power BI, Excel, SQL Server, Documentação e transforme sua carreira com conhecimento prático e direto ao ponto.</p>
       <div class="buttons">
-        <a href="#cursos" class="btn glass">Ver Cursos</a>
-        <a href="#contato" class="btn outline">Falar com Instrutor</a>
+        <a href="#cursos" class="btn btn-yellow">Ver Cursos</a>
+        <a href="inscricao.html" class="btn btn-outline">Fazer Inscrição</a>
       </div>
     </div>
   </section>
 
-  <!-- Cursos -->
   <section class="projects-section" id="cursos">
     <div class="container">
       <h2 class="section-title">Cursos Disponíveis</h2>
-      <p class="section-subtitle">Escolha o curso ideal para acelerar sua carreira:</p>
+      <p class="section-subtitle">Conteúdo prático, direto ao ponto e orientado ao mercado</p>
+
       <div class="projects-grid">
-        
         <div class="project-card">
-          <h3 class="project-title">Power BI Completo</h3>
-          <p class="project-description">Visualize dados, crie dashboards e tome decisões com base em análises de verdade.</p>
-          <a class="project-link" href="#contato">Quero Me Inscrever</a>
+          <h3 class="project-title" style="color: var(--powerbi);">Power BI Completo</h3>
+          <p class="project-description">Construa dashboards interativos, KPIs e análises visuais com dados reais.</p>
         </div>
 
         <div class="project-card">
-          <h3 class="project-title">Excel Profissional</h3>
-          <p class="project-description">Do básico ao avançado, com foco em produtividade, gráficos e automatização com fórmulas e VBA.</p>
-          <a class="project-link" href="#contato">Quero Me Inscrever</a>
+          <h3 class="project-title" style="color: var(--excel);">Excel Profissional</h3>
+          <p class="project-description">Do básico ao avançado, automatize planilhas com fórmulas e dashboards.</p>
         </div>
 
         <div class="project-card">
-          <h3 class="project-title">SQL Server do Zero</h3>
-          <p class="project-description">Aprenda a dominar consultas, joins, procedures e views para manipular dados como um especialista.</p>
-          <a class="project-link" href="#contato">Quero Me Inscrever</a>
+          <h3 class="project-title" style="color: var(--sql);">SQL Server do Zero</h3>
+          <p class="project-description">Domine comandos SQL, consultas otimizadas, views e procedures.</p>
         </div>
 
         <div class="project-card">
-          <h3 class="project-title">Documentação de Processos</h3>
-          <p class="project-description">Curso focado em BPMN, ferramentas como Draw.io, Word técnico e técnicas de padronização.</p>
-          <a class="project-link" href="#contato">Quero Me Inscrever</a>
+          <h3 class="project-title" style="color: var(--doc);">Documentação e Processos</h3>
+          <p class="project-description">Aprenda BPMN, fluxo técnico, modelagem e documentação profissional.</p>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- Sobre o Instrutor -->
-  <section class="projects-section" id="instrutor">
-    <div class="container">
-      <h2 class="section-title">Sobre o Instrutor</h2>
-      <p class="section-subtitle">Com mais de 8 anos atuando com dados, automação e processos...</p>
-      <p>Sou Samuel Ferreira, especialista em Power BI, SQL Server, Excel, Power Apps e Processos. Já treinei times comerciais, logísticos e administrativos, e ajudei empresas a tomarem decisões baseadas em dados e eficiência operacional.</p>
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section class="projects-section" id="contato">
-    <div class="container">
-      <h2 class="section-title">Vamos Aprender Juntos?</h2>
-      <p class="section-subtitle">Me chame no WhatsApp ou envie um e-mail.</p>
-      <div class="buttons">
-        <a href="https://wa.me/55SEUNUMEROAQUI" class="btn glass" target="_blank">WhatsApp</a>
-        <a href="mailto:samucajunior15@gmail.com" class="btn outline">E-mail</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Rodapé -->
   <footer>
     <div class="container">
       <p>&copy; 2025 Samuel Ferreira. Todos os direitos reservados.</p>
     </div>
   </footer>
-
 </body>
 </html>

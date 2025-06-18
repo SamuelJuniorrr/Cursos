@@ -3,60 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inscrição | Cursos</title>
+  <title>Inscrição | Cursos Samuel Ferreira</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container nav-container">
-      <div class="logo">Samuel<span> Ferreira</span></div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="inscricao.html" class="active">Inscrição</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <section class="projects-section">
-    <div class="container">
-      <h2 class="section-title">Inscreva-se agora</h2>
-      <p class="section-subtitle">Preencha com seus dados para iniciar sua jornada</p>
-      <form onsubmit="enviarWhatsapp(); return false;">
-        <div style="display:flex; flex-direction:column; max-width:500px; margin:auto; gap:1rem;">
-          <label>Nome:</label>
-          <input id="nome" required>
-          <label>Curso:</label>
-          <select id="curso" required>
-            <option value="">Selecione</option>
-            <option>Power BI</option>
-            <option>Excel</option>
-            <option>SQL Server</option>
-            <option>Documentação</option>
-          </select>
-          <label>Email:</label>
-          <input id="email" type="email" required>
-          <label>Mensagem (opcional):</label>
-          <textarea id="msg" rows="4"></textarea>
-          <button class="btn btn-yellow" type="submit">Enviar via WhatsApp</button>
-        </div>
-      </form>
-    </div>
-  </section>
+<header>
+  <div class="logo">Samuel<span> Ferreira</span></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="inscricao.html" class="active">Inscrição</a></li>
+  </ul>
+</header>
 
-  <footer><div class="container"><p>&copy; 2025 Samuel Ferreira. Todos os direitos reservados.</p></div></footer>
+<section class="container" style="margin-top: 100px">
+  <h2 class="section-title">Faça sua inscrição</h2>
+  <p class="section-subtitle">Preencha seus dados e fale comigo no WhatsApp</p>
 
-  <script>
-    function enviarWhatsapp() {
-      const nome = document.getElementById('nome').value;
-      const curso = document.getElementById('curso').value;
-      const email = document.getElementById('email').value;
-      const msg = document.getElementById('msg').value;
-      const texto = `Olá! Quero me inscrever em um curso.\n\nNome: ${nome}\nCurso: ${curso}\nEmail: ${email}\nMensagem: ${msg}`;
-      window.open(`https://wa.me/5541997668016?text=${encodeURIComponent(texto)}`, '_blank');
-    }
-  </script>
+  <form onsubmit="enviarWhatsapp(); return false;" style="max-width: 600px; margin: auto; display: flex; flex-direction: column; gap: 1rem;">
+    <label>Nome Completo:</label>
+    <input type="text" id="nome" required>
+
+    <label>E-mail:</label>
+    <input type="email" id="email" required>
+
+    <label>Curso de Interesse:</label>
+    <select id="curso" required>
+      <option value="">Selecione</option>
+      <option>Power BI</option>
+      <option>Excel</option>
+      <option>SQL Server</option>
+      <option>Documentação</option>
+    </select>
+
+    <label>Mensagem (opcional):</label>
+    <textarea id="mensagem" rows="4"></textarea>
+
+    <button class="btn" type="submit">Enviar via WhatsApp</button>
+  </form>
+</section>
+
+<script>
+  function enviarWhatsapp() {
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const curso = document.getElementById("curso").value;
+    const mensagem = document.getElementById("mensagem").value;
+
+    const texto = `Olá, quero me inscrever no curso.\n\n👤 Nome: ${nome}\n📧 E-mail: ${email}\n🎓 Curso: ${curso}\n📝 Mensagem: ${mensagem}`;
+    const url = `https://wa.me/55SEUNUMEROAQUI?text=${encodeURIComponent(texto)}`;
+    window.open(url, '_blank');
+  }
+</script>
+
+<footer>
+  <p>&copy; 2025 Samuel Ferreira. Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
